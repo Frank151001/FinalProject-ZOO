@@ -1,10 +1,87 @@
 {% extends 'base.html' %}
 {% load static %}
-
-{% block title %}About{% endblock title %}
+{% block more_css %}
+<link rel="stylesheet" href="{%static 'css/style.css'%}">
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>National Geographic</title>
+{% endblock more_css %}
+{% block title %}California Zoo{% endblock title %}
 
 {% block content %}
+
 <div class="container">
-    <h1>Who We Are</h1>
+
+    <div class="row page-intro">
+        <div class="col-lg-12">
+            <h1>About our page
+                
+            </h1>
+            <p>Welcome to the Opage dedicated to the captivating and diverse world of animals at California Zoo. Here, you'll find a treasure trove of information about the incredible creatures that call our zoo home. From awe-inspiring mammals to enchanting birds, from slithering reptiles to fascinating insects, our Opage is your gateway to discovering the wonders of the animal kingdom.</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <article class="col-md-4 article-intro">
+            <a href="#">
+                <img class="img-responsive img-rounded" src="{%static 'img/support.jpg'%}" alt="">
+            </a>
+            <h3>
+                <a href="#">Our Commitment to Conservation</a>
+            </h3>
+            <p>At California Zoo, we take our role as stewards of wildlife seriously. Our Opage not only introduces you to the animals under our care but also highlights our commitment to conservation efforts. Learn about our partnerships with global organizations, breeding programs for endangered species, and initiatives aimed at protecting natural habitats. By visiting our Opage, you're joining us on a journey to safeguard the planet's biodiversity for generations to come.</p>
+        </article>
+        <article class="col-md-4 article-intro">
+            <a href="#">
+                <img class="img-responsive img-rounded" src="{%static 'img/5.jpg'%}" alt="">
+            </a>
+            <h3>
+                <a href="#">Explore the Animal Profiles</a>
+            </h3>
+            <p>Delve into the individual stories of the animals residing at [Zoo Name]. Each animal profile offers a glimpse into the creature's habits, habitat, diet, and unique characteristics. From the playful antics of our primates to the graceful movements of aquatic life, you'll be captivated by the diversity of life showcased here.</p>
+        </article>
+
+        <article class="col-md-4 article-intro">
+            <a href="#">
+                <img class="img-responsive img-rounded" src="{%static 'img/rino.jpg'%}" alt="">
+            </a>
+            <h3>
+                <a href="#">Dynamically Procrastinate</a>
+            </h3>
+            <p>Professionally cultivate one-to-one customer service with robust ideas. Completely synergize resource taxing relationships via premier niche markets. Dynamically innovate resource-leveling customer service for state of the art customer service.</p>
+        </article>
+        <article class="col-md-4 article-intro">
+            <a href="#">
+                <img class="img-responsive img-rounded" src="{%static 'img/asg.jpg'%}" alt="">
+            </a>
+            <h3>
+                <a href="#">Upcoming Exhibits and Events</a>
+            </h3>
+            <p>Stay in the loop about the latest happenings at California Zoo. Whether it's a new exhibit featuring a rare species, an exciting feeding demonstration, or a family-friendly event, our Opage keeps you informed about what's coming up. Plan your visit and mark your calendar for unforgettable experiences with our animals.</p>
+        </article>
+        <article class="col-md-4 article-intro">
+            <a href="#">
+                <img class="img-responsive img-rounded" src="{%static 'img/membership.jpg'%}" alt="">
+            </a>
+            <h3>
+                <a href="#">Educational Resources</a>
+            </h3>
+            <p>Our Opage isn't just for entertainment; it's also a valuable educational resource. Teachers, parents, and curious minds of all ages can access a wealth of information about animal behavior, adaptations, and ecosystems. Discover downloadable resources, interactive quizzes, and virtual tours that provide an engaging way to learn about the natural world.</p>
+        </article>
+        <article class="col-md-4 article-intro">
+            <a href="#">
+                <img class="img-responsive img-rounded" src="{%static 'img/pdcast.jpg'%}" alt="">
+            </a>
+            <h3>
+                <a href="#">How You Can Support</a>
+            </h3>
+            <p>If you're inspired by the creatures you encounter on our Opage, consider contributing to our conservation efforts. Learn about our donation programs, volunteer opportunities, and membership options that allow you to become an active participant in safeguarding wildlife and their habitats.</p>
+        </article>
+    </div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d107395.80245510524!2d-117.29106058359372!3d32.73603530000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d95495497f80c9%3A0x5df0f4372635e247!2sZool%C3%B3gico%20de%20San%20Diego!5e0!3m2!1ses!2smx!4v1691634247381!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
 </div>
+
 {% endblock content %}

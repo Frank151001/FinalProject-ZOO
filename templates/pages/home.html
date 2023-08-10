@@ -1,13 +1,122 @@
 {% extends 'base.html' %}
+{% load static %}
+{% block title %}California Zoo{% endblock title %}
 
-{% block title %}Home{% endblock title %}
+{% block more_css %}
+<link rel="stylesheet" href="{%static 'css/style.css'%}">
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>National Geographic</title>
+{% endblock more_css %}
+
 
 {% block content %}
 
 <div class="container">
-    <p style="text-align: justify;">San Diego Zoo Wildlife Alliance is an international, nonprofit conservation organization with two front doors. 
-        We integrate wildlife health and care, science, and education to develop sustainable conservation solutions. 
-        Conservation is at the heart of everything we do. And it starts with that connection we make with people and wildlife 
-        every day. Because when wildlife thrives, all life thrives</p>
+  <header>
+      <h1 class="title">WELCOME</h1>
+      <p class="text"><span>California Zoo</span> Top #3 of ranking on global zoo on the world!</p>
+      <div class="border"></div>
+  </header>
+  <main>
+      <div class="check">
+          <div class="news">
+              <div class="main-news">
+                  <div class="main-news-img">
+                      <img src="{%static 'img/tickets.avif'%}" alt="Another Image Zoom-on-hover effect">
+                  </div>
+
+                  <div class="main-news-text">
+                      <p>GET YOUR TICKETS</p>
+                      <a class="read-btn" href="" class="link-read"><i class="fa-solid fa-bars"></i> click here
+                      </a>   
+                  </div>
+              </div>
+              <div class="secondary-news-container">
+                  <div class="secondary-news">
+                      <div class="secondary-news-img">
+                          <img src="{%static 'img/4.png'%}" alt="">
+                      </div>
+                      
+                      <div class="secondary-news-text">
+                          <h3>Animals</h3>
+                          <p>Discover what kind of animals we have</p>
+                          <a class="read-btn" href="http://127.0.0.1:8000/animals/" class="link-read"><i class="fa-solid fa-bars"></i> click here
+                          </a> 
+                      </div>
+                  </div>
+                  <div class="secondary-news">
+                      <div class="secondary-news-img">
+                          <img src="{%static 'img/about.jpg'%}" alt="">
+                      </div>
+                      <div class="secondary-news-text">
+                          <h3>About us</h3>
+                          <p>Join us on this adventure, let's meet us</p>
+                          <a class="read-btn" href="http://127.0.0.1:8000/about/" class="link-read"><i class="fa-solid fa-bars"></i> click here
+                          </a> 
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="todays-picks">
+              <table>
+                  <td>
+                      <div class="vertical-border"> </div> 
+                  </td>
+                  <td>
+                      <h2>Activity to do</h2> 
+                  </td>
+              </table>
+              <div class="pick-item">
+                  <img src="{%static 'img/morning.jpg'%}" alt="">
+                  <div class="pick-item-text">
+                      <h3 class="paid-content">Early Morning Explorers</h3>
+                      <a >Be a wildlife explorer, and enjoy exclusive early morning access</a>
+                  </div>
+              </div>
+              <div class="pick-item">
+                  <img src="{%static 'img/action.jpg'%}" alt="">
+                  <div class="pick-item-text">
+                      <h3>Animals in Action</h3>
+                      <a >Bring your camera to this fun and interactive experience.</a>
+                  </div>
+              </div>
+              <div class="pick-item">
+                  <img src="{%static 'img/tour.jpg'%}" alt="">
+                  <div class="pick-item-text">
+                      <h3>Discovery Cart Tour</h3>
+                      <a >Enjoy a 60-minute guided tour of the Zoo.</a>
+                  </div>
+              </div>
+              <div class="pick-item">
+                  <img src="{%static 'img/2.jpg'%}" alt="">
+                  <div class="pick-item-text">
+                      <h3>Exclusive VIP Experience</h3>
+                      <a >Spend up to five hours exploring the Zoo.</a>
+                  </div>
+              </div>
+              <div class="pick-item">
+                  <img src="{%static 'img/wilfire.jpg'%}" alt="">
+                  <div class="pick-item-text">
+                      <h3>Wildlife Baby Boom</h3>
+                      <a>Join us to see some of the newest and cutest members</a>
+                  </div>
+              </div>
+              <div class="pick-item">
+                  <img src="{%static 'img/inside.jpg'%}" alt="">
+                  <div class="pick-item-text">
+                      <h3>Inside Look Tours</h3>
+                      <a >These 90-minute guided adventures offer one-of-a-kind experiences</a>
+                  </div>
+              </div>
+              
+          </div>
+      </div>
+  </main>
 </div>
+<script src="{%static 'js/carrousel.js'%}" 
+    ></script>
 {% endblock content %}
+
+

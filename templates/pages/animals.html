@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}California Zoo{% endblock title %}
+
+{% block more_css %}
+<link rel="stylesheet" href="{%static 'css/style.css'%}">
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>National Geographic</title>
+{% endblock more_css %}
+
+
+{% block content %}
+<h1 class="title">Visit out family!</h1>
+<div class="grid-container">
+  <div>
+    <img class='grid-item grid-item-1' src="{%static 'img/5.jpg'%}" alt=''>
+  </div>
+  <div>
+    <img class='grid-item grid-item-2' src="{%static 'img/tigre.jpg'%}" alt=''>
+  </div>
+  <div>
+    <img class='grid-item grid-item-3' src="{%static 'img/pinguin.jpg'%}" alt=''>
+  </div>
+  <div>
+    <img class='grid-item grid-item-4' src="{%static 'img/6.jpg'%}" alt=''>
+  </div>
+  <div>
+    <img class='grid-item grid-item-5' src="{%static 'img/rino.jpg'%}" alt=''>
+  </div>
+  <div>
+    <img class='grid-item grid-item-6' src="{%static 'img/ahh.jpg'%}" alt=''>
+  </div>
+  <div>
+    <img class='grid-item grid-item-7' src="{%static 'img/zzz.JPG'%}" alt=''>
+  </div>
+  <div>
+    <img class='grid-item grid-item-8' src="{%static 'img/jirafa.jpg'%}" alt=''>
+  </div>
+  <div>
+    <img class='grid-item grid-item-9' src="{%static 'img/panda.jpg'%}" alt=''>
+  </div>
+  <div>
+    <img class='grid-item grid-item-10' src="{%static 'img/aguila.jpg'%}" alt=''>
+  </div>
+</div>
+{% endblock content %}
+
+
+
+
